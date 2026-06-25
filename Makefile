@@ -5,7 +5,7 @@ OBJCOPY = objcopy
 DD = dd
 
 NASMFLAGS = -f bin
-CFLAGS = -m32 -ffreestanding -nostdlib -nostdinc -fno-builtin -fno-stack-protector -fno-pie -fno-pic -Wall -Wextra -O2
+CFLAGS = -m32 -ffreestanding -nostdlib -nostdinc -fno-builtin -fno-stack-protector -fno-pie -fno-pic -mno-sse -mno-sse2 -Wall -Wextra -O2
 LDFLAGS = -m elf_i386 -T linker.ld -nostdlib
 
 BUILD_DIR = build
